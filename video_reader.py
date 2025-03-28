@@ -162,7 +162,7 @@ class VideoReader:
             # Update title with current data rate
             if len(self.ppg_values) > 10:
                 data_rate = len(self.ppg_values) / (time.time() - self.start_time)
-                self.ax.set_title(f'PPG Signal - {data_rate:.1f} Hz')
+                # self.ax.set_title(f'PPG Signal - {data_rate:.1f} Hz')
         
         return self.line,
     
